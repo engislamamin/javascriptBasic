@@ -1,13 +1,14 @@
 /* 
 Function 
 
-Function without parameter
+Function without parameters
 */
 
 function funcWithoutPara() { 
     console.log("function without parameter");
 }
-//Called function.
+// Invoke the function.
+
 funcWithoutPara();
 
 //Function with parameters.
