@@ -1,0 +1,41 @@
+// Object Methods
+const preson = {};
+preson.name = "John";
+preson.age = 30;
+preson.greet = function() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+};
+preson.greet(); // Output: Hello, my name is John and I am 30 years old.
+// Adding a method to an object
+const car = {
+    brand: "Toyota",
+    model: "Corolla",
+    year: 2020,
+    getDetails: function() {
+        return `${this.year} ${this.brand} ${this.model}`;
+    }
+};
+console.log(car.getDetails()); // Output: 2020 Toyota Corolla
+// Using 'this' in object methods
+const person = {
+    firstName: "Alice",
+    lastName: "Smith",
+    fullName: function() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+};
+console.log(person.fullName()); // Output: Alice Smith
+
+// example of adding properties and methods to an object.
+var car1 = {};
+car1.mileage = 10000;
+car1.color = "red";
+console.log(car1);
+car1.turnTheKey = function() {
+    console.log("The car is now running.");
+}
+car1.lightsOn = function() {
+    console.log("The lights are now on.");
+}
+car1.turnTheKey(); // Output: The car is now running.
+car1.lightsOn(); // Output: The lights are now on.
